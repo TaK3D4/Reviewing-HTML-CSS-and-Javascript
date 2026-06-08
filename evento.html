@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web - Eventos</title>
+    <link rel="stylesheet" href="/css/Styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Google es genial</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#acerca-de">Acerca de</a></li>
+                <li><a href="evento.html">Eventos</a></li>
+                <li><a href="Multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <h2>Registrate a nuestro proximo evento</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam excepturi, magnam at odio eum placeat vero quae dolorem laboriosam fugit fugiat totam sequi, deleniti quaerat velit. Repellendus, molestiae esse.
+        </p>
+        <form action="/index.html" method="get">
+            <fieldset>
+                <legend>Registrate</legend>
+                <label>Edad:    
+                    <input type="number" name="edad" id="edad" required min="18">
+                </label>
+                <label>Nombre:    
+                    <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="20">
+                </label>
+                <label>Correo:    
+                    <input type="email" name="Correo" id="Correo" required>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Genero</legend>
+                <label>Hombre
+                    <input type="radio" name="Genero" id="hombre" value="hombre" required>
+                </label>
+                <label>Mujer
+                    <input type="radio" name="Genero" id="mujer" value="mujer" required>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Eventos</legend>
+                <label for="evento">Seleccione el evento:</label>
+                <select name="evento" id="evento">
+                    <option value="Conferencia_tec">Conferencias tecnologicas</option>
+                    <option value="webinar_seo">Webinar sobre SEO</option>
+                    <option value="taller_cloud">Taller sobre Sloud Computing</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ciudades de eventos</legend>
+                <label for="ciudad">Ciudad: </label>
+                <input list="ciudades" id="ciudad" name="ciudad" required>
+                <datalist id="ciudades">
+                    <option value="Madrid"></option>
+                    <option value="Barcelona"></option>
+                    <option value="Valencia"></option>
+                    <option value="Sevilla"></option>
+                    <option value="Bilbao"></option>
+                </datalist>
+            </fieldset>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Mas informacion sobre los eventos</h2>
+
+        <details open>
+            <summary>Conferencia Tecnologica</summary>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto reiciendis fuga tempora tempore praesentium similique? Tempora perferendis natus, sequi, officia, doloremque non dicta voluptas eos accusamus quidem id cumque.
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary>Webinar sobre SEO</summary>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis a sunt facilis, enim facere, reprehenderit quisquam temporibus animi suscipit ex iste unde necessitatibus minima minus, est voluptates tempore quod!
+            </p>
+        </details>
+
+        <details>
+            <summary>Taller sobre Cloud Computing</summary>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis a sunt facilis, enim facere, reprehenderit quisquam temporibus animi suscipit ex iste unde necessitatibus minima minus, est voluptates tempore quod!
+            </p>
+        </details>
+    </section>
+</body>
+
+<Main></Main>
+</html>
+
+
