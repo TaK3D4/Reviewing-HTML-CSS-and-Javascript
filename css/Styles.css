@@ -1,12 +1,25 @@
+
+/* Estilos de Texto */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+
 }
 
 h1{
+    font-family: initial;
     font-size: 60px;
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 10px 10px 2px gray;
 }
+
+p, li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/* Herencia */
 
