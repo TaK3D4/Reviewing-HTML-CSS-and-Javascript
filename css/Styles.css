@@ -8,18 +8,41 @@ body{
 }
 
 h1{
-    font-family: initial;
     font-size: 60px;
     text-align: center;
     color: rgb(0, 0, 0);
-    text-shadow: 10px 10px 2px gray;
+    text-shadow: 3px 3px 2px gray;
+}
+
+h1 span:first-child,
+h1 span:nth-child(4){
+    color: #145fc1;
+}
+
+h1 span:nth-child(2),
+h1 span:last-child{
+    color: #e03838;
+}
+
+h1 span:nth-child(3){
+    color: #dbb52b;
+}
+
+h1 span:nth-last-child(2){
+    color: #108b10;
 }
 
 p, li{
     font-size: 16px;
-    line-height: 2;
     letter-spacing: 1px;
 }
 
-/* Herencia */
+a:hover{
+    color: red;
+}
 
+input[type="text"]:focus{
+    border: 3px solid red;
+    outline: 2px solid brown;
+    border-radius: 5px;
+}
